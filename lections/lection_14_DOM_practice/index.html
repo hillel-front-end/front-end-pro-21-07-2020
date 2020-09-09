@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, initial-scale=1.0">
+  <title>Lection 14. DOM Practice</title>
+</head>
+<body>
+  <form action="" name="registration">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name"></p>
+    <p>
+      <label for="surname">Surname</label>
+      <input type="text" name="surname" id="surname">
+    </p>
+    <p>
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date">
+    </p>
+    <p>
+      <label for="gender-m">M</label>
+      <input type="radio" name="gender" value="M" id="gender-m">
+      <label for="gender-f">F</label>
+      <input type="radio" name="gender" value="F" id="gender-f">
+    </p>
+    <p>
+      <label for="city">City</label>
+      <select name="city" id="city">
+        <option value="Odessa">Odessa</option>
+        <option value="Kyiv">Kyiv</option>
+      </select>
+    </p>
+    <p>
+      <label for="address">Address</label>
+      <textarea name="address" id="address" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+      <label for="english">English</label>
+      <input type="checkbox" name="language" value="english" id="english">
+      <label for="ukrainian" >ukrainian</label>
+      <input type="checkbox" name="language" value="ukrainian" id="ukrainian">
+      <label for="russian">russian</label>
+      <input type="checkbox" name="language" value="russian" id="russian">
+    </p>
+    <p>
+      <input type="submit" value="Submit">
+    </p>
+  </form>
+  <script src="main.js"></script>
+  <script src="form_submission.js"></script>
+</body>
+</html>
