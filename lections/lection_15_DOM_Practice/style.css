@@ -1,0 +1,14 @@
+.hide {
+  display: none;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.figure {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, initial-scale=1.0">
+  <title>DOM - Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <p>
+      <select name="figure" id="figure">
+        <option value="" disabled selected>--Select One--</option>
+        <option value="square">Square</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="circle">Circle</option>
+      </select>
+    </p>
+    <form action="" name="create_figure" id="figure_form">
+      <fieldset name="square" class="hide">
+        <div>Square</div>
+        <p>
+          <label for="square_size">Size</label>
+          <input type="number" id="square_size" name="size">
+        </p>
+        <p>
+          <label for="square_color">Color</label>
+          <input type="color" id="square_color" name="color">
+        </p>
+        <p>
+          <label for="square_text">Text</label>
+          <input type="text" id="square_text" name="text">
+        </p>
+      </fieldset>
+      <fieldset name="rectangle" class="hide">
+        <div>Rectangle</div>
+        <p>
+          <label for="rectangle_width">Width</label>
+          <input type="number" id="rectangle_width" name="width">
+        </p>
+        <p>
+          <label for="rectangle_height">Height</label>
+          <input type="number" id="rectangle_height" name="height">
+        </p>
+        <p>
+          <label for="Rectangle_color">Color</label>
+          <input type="color" id="rectangle_color" name="color">
+        </p>
+        <p>
+          <label for="rectangle_text">Text</label>
+          <input type="text" id="rectangle_text" name="text">
+        </p>
+      </fieldset>
+      <fieldset name="circle" class="hide">
+        <div>circle</div>
+        <p>
+          <label for="circle_size">Size</label>
+          <input type="number" id="circle_size" name="size">
+        </p>
+        <p>
+          <label for="circle_color">Color</label>
+          <input type="color" id="circle_color" name="color">
+        </p>
+        <p>
+          <label for="circle_text">Text</label>
+          <input type="text" id="circle_text" name="text">
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Draw" class="submit-btn">
+      </p>
+    </form>
+    <div id="container" class="container"></div>
+  </div>
+  <script src="app.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
