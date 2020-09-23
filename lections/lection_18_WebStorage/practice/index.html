@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      margin: 0 auto;
+      max-width: 560px;
+    }
+    .message-container {
+      border: 1px solid black;
+      padding: 8px;
+      overflow-y: scroll;
+      height: 200px;
+    }
+    .message-container p span {
+      font-weight: bold;
+    }
+    .form-container {
+      margin-top: 12px;
+    }
+    textarea {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="message-container" id="message-container">
+    </div>
+    <div class="form-container">
+      <textarea id="message" rows="3"></textarea>
+      <div>
+        <button id="send">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
