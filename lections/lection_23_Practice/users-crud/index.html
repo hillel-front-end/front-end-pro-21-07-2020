@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, initial-scale=1.0">
+  <title>Users - CRUD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container-fluid app-container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Surname</th>
+              <th scope="col">Age</th>
+              <th scope="col">Address</th>
+              <th scope="col">Skills</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="users-table">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-primary" id="create">Create user</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <form action="" id="user-form" class="hide">
+          <div class="form-group">
+            <label for="user-name">Name</label>
+            <input name="name" type="text" class="form-control" id="user-name">
+          </div>
+          <div class="form-group">
+            <label for="user-surname">Password</label>
+            <input name="surname" type="text" class="form-control" id="user-surname">
+          </div>
+          <div class="form-group">
+            <label for="user-age">Age</label>
+            <input name="age" type="number" class="form-control" id="user-age">
+          </div>
+          <div class="form-group">
+            <label for="user-address">Address</label>
+            <textarea name="address" class="form-control" id="user-address"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="form-check form-check-inline">
+              <input
+                  name="languages"
+                  type="checkbox"
+                  value="JS"
+                  class="form-check-input"
+                  id="JS">
+              <label class="form-check-label" for="JS">JS</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="languages"
+                type="checkbox"
+                class="form-check-input"
+                value="Python"
+                id="Python">
+              <label class="form-check-label" for="Python">Python</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                name="languages"
+                type="checkbox"
+                value="PHP"
+                class="form-check-input"
+                id="PHP">
+              <label class="form-check-label" for="PHP">PHP</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+      </div>
+    </div>
+  </div> 
+  <script src="app.js"></script>
+</body>
+</html>
