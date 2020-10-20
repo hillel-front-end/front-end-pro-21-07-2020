@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cities</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .btn-green {
+      background-color: green;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Cities</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="container">
+            <!-- <tr>
+              <td>Odesa</td>
+              <td>
+                <button class="btn btn-primary" data-action="edit">Edit</button>
+                <button class="btn btn-danger" data-action="remove">Remove</button>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <form action="" id="create-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="City name">
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-info btn-green">Create</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
