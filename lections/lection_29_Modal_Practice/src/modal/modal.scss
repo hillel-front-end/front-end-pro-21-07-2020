@@ -1,0 +1,56 @@
+.modal {
+  display: block;
+  &--hide {
+    display: none;
+  }
+  &__overlay {
+    background-color: rgba( #000000, 0.5666666);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+  }
+  &__window {
+    width: 600px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+  }
+  &__header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    padding: 10px;
+  }
+  &__footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__closeBtn {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  &__button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    &--danger {
+      background-color: #fe6262;
+      border-color: #c60000;
+      color: white;
+    }
+  }
+}
