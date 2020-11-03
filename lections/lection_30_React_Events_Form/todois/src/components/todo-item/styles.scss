@@ -1,0 +1,8 @@
+.TodoItem {
+  &__title {
+    margin-left: 10px;;
+    &--done {
+      text-decoration: line-through;
+    }
+  }
+}
